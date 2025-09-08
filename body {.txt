@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: "Tahoma", sans-serif;
+  background: #fff;
+}
+
+.chat-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* القائمة الجانبية */
+.sidebar {
+  width: 25%;
+  background: #f8bbd0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  color: #e91e63;
+  margin-bottom: 20px;
+}
+
+.contacts {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts li {
+  padding: 10px;
+  border-radius: 8px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.contacts li.active, .contacts li:hover {
+  background: #e91e63;
+  color: #fff;
+}
+
+/* نافذة المحادثة */
+.chat-box {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background: #e91e63;
+  color: #fff;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #fefefe;
+}
+
+.msg {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 12px;
+  max-width: 60%;
+}
+
+.sent {
+  background: #e91e63;
+  color: #fff;
+  margin-left: auto;
+}
+
+.received {
+  background: #f1f1f1;
+  color: #333;
+  margin-right: auto;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.chat-input button {
+  background: #e91e63;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background: #d81b60;
+}
